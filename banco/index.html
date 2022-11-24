@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simulador de banco</title>
+</head>
+
+<body>
+  
+
+    <div class="app">
+        <h1>MyBank</h1>
+
+        <div class="saldo">
+            <div>Saldo</div>
+            <span id="saldo">0,00</span>
+        </div>
+
+        <div class="valor">
+            <div id="titulo">Valor</div>
+            <input type="number" id="valor"  style="text-align:center" value="0.00" step="0.01">
+        </div>
+
+        <div class="buttons">
+            <button id="deposito" onclick="depositar()">Depositar</button>
+            <button id="saque" onclick="sacar()">Sacar</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
